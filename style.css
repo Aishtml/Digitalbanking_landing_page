@@ -99,7 +99,7 @@ img {
     flex-direction: column-reverse;
 }
 
-.hero--banner div {
+.mobile--image {
     width: 100%;
     background-image: url('./images/bg-intro-mobile.svg');
     background-repeat: no-repeat;
@@ -303,6 +303,40 @@ footer {
 }
 
 @media(min-width: 70em) {
+    .hero--banner {
+        width: max(90%, 300px);
+        margin-left:  auto;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .desktop--image {
+        width: 100%;
+        background-image: url('./images/bg-intro-desktop.svg');
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-position-y: -15rem;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    .hero--banner img {
+        transform: translateX(20%);
+        top: -10em;
+        left: 2em;
+    }
+
+    .hero--banner section {
+        width: 50%;
+        transform: translateY(80%);
+    }
+
+    .hero--banner section,
+    .hero--banner p {
+        text-align: left;
+    }
+
     .about div,
     article {
         grid-template-columns: repeat(4, 1fr);
