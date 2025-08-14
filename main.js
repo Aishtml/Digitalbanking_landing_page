@@ -18,8 +18,7 @@ const openMenu = (event)  => {
 }
 
 const closeMenu = (event)  => {
-    const menuList = event.target.parentElement;
-    menuList.style.display = 'none';
+    closeBtn.style.display = 'none';
     header.style.backgroundColor =  'hsl(0, 100%, 100%)';
 }
 
