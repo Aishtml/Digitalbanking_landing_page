@@ -246,13 +246,17 @@ footer {
     margin-bottom: 2em;
 }
 
-.Request-link {
+.Request-link,
+.nav--link2 a {
     background-image: linear-gradient(50deg, var(--Green-500), var(--Cyan-400));
     padding: 0.5em 1em;
     border-radius: 50px;
     display: inline-block;
     color: var(--White);
     text-decoration: none;
+}
+
+.Request-link {
     margin-bottom: 2em;
 }
 
@@ -304,16 +308,52 @@ footer {
 }
 
 @media(min-width: 70em) {
+    .hero--banner h1 {
+        font-size: 3rem;
+    }
+    .nav--link1 {
+        position: static;
+        display: block;
+    }
+
+    .nav--link1 img {
+        display: none;
+    }
+
+    .nav--link1 ul {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .nav--link2 {
+        display: block;
+    }
+
+    .nav--link2 li {
+        list-style-type: none;
+    }
+
+    .hero--nav-logo img:not([class="hero--logo"]) {
+        display: none;
+    }
+
+    .hero--nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     .hero--banner {
         width: max(90%, 300px);
         margin-left:  auto;
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
     }
 
     .desktop--image {
-        width: 100%;
+        width: 60%;
         background-image: url('./images/bg-intro-desktop.svg');
         background-repeat: no-repeat;
         background-position-x: left;
@@ -329,8 +369,7 @@ footer {
     }
 
     .hero--banner section {
-        width: 50%;
-        transform: translateY(80%);
+        width: 30%;
     }
 
     .hero--banner section,
